@@ -1,0 +1,459 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial';
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d0c3c3;
+    padding: 20px;
+    flex-direction:row;
+    border-bottom: 2px solid black;
+   
+}
+nav ul li{
+    list-style: none;
+    margin-right: 100px;
+    margin-top: 8px;
+}
+nav ul a{
+    margin-inline: 25px;
+    font-size: 20px;
+}
+li{
+    margin-right: 0px;
+}
+body{
+    background-color:#ece6e6;
+}
+.logo{
+    font-size: 25px;
+    margin-left: 25px ;
+}
+/* ul li #home{
+    color: rgb(5, 157, 157);
+} */
+/* #home:hover{
+    border-bottom: 2px solid rgb(5, 157, 157);
+    
+} */
+ul li a:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+
+}
+ul li i:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;}
+ul li i{
+    font-size: 20px;
+}
+
+
+
+/* Main page */
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+}
+
+.maintext{
+    margin-top: 150px;
+}
+.maintext h1{
+    font-size: 60px;
+}
+.maintext .top{
+    color: rgb(5, 157, 157);
+}
+.maintext h2{
+    font-size: 40px;
+}
+.maintext button{
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: rgb(5, 157, 157);
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.maintext button:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: transparent;
+}
+.maintext p{
+    font-size: 20px;
+    margin-top: 8px;
+}
+.main{
+    border-bottom: 4px solid rgb(30, 12, 231);
+}
+.main img{
+    height: 108%;
+    position: relative;
+    top: -30px;
+}
+
+.rate{
+    color: rgb(205, 135, 6);
+}
+
+/* Different cards */
+.trend1 .head h1{
+    text-align: center;
+    margin-top: 32px;
+    padding: 33px;
+}
+.head span{
+    color: rgb(5, 157, 157);
+}
+.card{
+    display: flex;
+    justify-content: center;
+}
+.card .crd{
+    width: 280px;
+    height: 400px;
+    margin-inline: 50px;
+    background-color: white;
+    padding: 20px;
+    border:2px solid blue;
+    border-radius: 12px;
+    
+}
+.crd img{
+    width: 95%;
+    height: 70%;
+    border: 2px solid black;
+    display: flex;
+    padding-left: 10px;
+    border-radius: 12px;
+}
+.crdtext{
+    padding-left: 10px;
+    position: relative;
+    top: 15px;
+}
+.crdtext i{
+    padding-top: 5px;
+}
+.crdtext button{
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+}
+.crdtext i{
+    color: rgb(255, 191, 0);
+}
+
+
+/* explore */
+.trend2 .head h1{
+    text-align: center;
+    margin-top: 32px;
+    padding: 33px;
+    position: sticky;
+    text-align: center;
+}
+.head span{
+    color: rgb(5, 157, 157);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+}
+.card .crd{
+    width: 280px;
+    height: 400px;
+    margin-inline: 50px;
+    background-color: white;
+    padding: 20px;
+    border:2px solid blue;
+    border-radius: 12px;
+    
+}
+.crd img{
+    width: 95%;
+    height: 70%;
+    border: 2px solid black;
+    display: flex;
+    padding-left: 10px;
+    border-radius: 12px;
+    position: relative;
+    left: 6px;
+}
+.crdtext{
+    padding-left: 10px;
+    position: relative;
+    top: 15px;
+}
+.crdtext i{
+    padding-top: 5px;
+}
+.crdtext button{
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+}
+.crdtext i{
+    color: rgb(255, 191, 0);
+}
+.trend2 .card .crd img{
+    padding-left: 0px;
+}
+
+@keyframes hoverAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.crd:hover {
+    animation: hoverAnimation 1s forwards ease;
+    cursor: pointer;
+}
+
+
+/* Blogs */
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    margin-inline: 100px;
+    background-color: white;
+    border-radius: 12px;
+    border:2px solid blue;
+
+}
+.blog img{
+    width: 85%;
+    height: 70%;
+    margin-left: 12px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+.blogtext{
+    padding: 15px;
+    
+}
+.blogtext h2{
+    color:blue ;
+    position: relative;
+    bottom: 60px;
+}
+.blogtext p{
+    position: relative;
+    bottom: 50px;
+}
+.blogtext a{
+    text-decoration: none;
+    color:black ;
+    position: relative;
+    bottom: 20px;
+    background-color: aqua;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+
+/* Letter */
+.letter{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(4, 4, 130);
+    color: white;
+    padding: 26px;
+    position: relative;
+    top: 24px;
+}
+.inp{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 14px;
+    
+}
+.inp input{
+    width: 200px;
+    height: 33px;
+    border: 2px solid black;
+    border-radius: 8px 0px 0px 8px;
+}
+.inp button{
+    width:100px ;
+    height: 35px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+/* about us */
+.about{
+    display: none;
+}
+.aboutus{
+    padding: 30px;
+    color: white;
+    background-color: rgb(56, 51, 51);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    background-color: #d2b9b9;
+    width: 800px;
+    padding: 33px;
+    margin-left: 22%;
+    margin-top: 5%;
+    border-radius: 20px; 
+}
+.abouttext{
+    padding-top: 20px;
+}
+.aboutme img{
+    height: 60%;
+    width: 70%;
+    padding-top: 60px;
+}
+
+/* Contact us */
+
+.contactus{
+    padding: 30px;
+    color: white;
+    background-color: rgb(56, 51, 51);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.contactme{
+    display: flex;
+    justify-content: center;
+    background-color: #d2b9b9;
+    width: 900px;
+    padding: 33px;
+    margin-left: 18%;
+    margin-top: 5%;
+    border-radius: 20px; 
+}
+.contecttext{
+    margin-left: 5px;
+
+}
+.contect .contectme p{
+    margin-top: 80px;
+}
+#map{
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 20px;
+    border-radius: 12px;
+}
+.contecttext{
+    padding: 40px;
+}
+.form{
+    background-color: #d2b9b9;
+    margin-top: 33px;
+    width: 50%;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    left: 25%;
+    border-radius: 12px;
+    padding-top: 50px;
+}
+.form input{
+    width: 300px;
+    height: 33px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.form button{
+    width: 100px;
+    height: 33px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+#contactus{
+    display: none;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+    background-color: #ece6e6;
+}
+.footertext p{
+    margin:20px;
+}
+#exgirl{
+    display: none;
+}
+#exboy{
+    display: none;
+}
+#exploreall{
+    display: none;
+}
+
+/* scrolling */
+
+.trend2{
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    white-space: nowrap;
+}
+.trend2 .card{
+    display: inline-flex;
+    padding-bottom: 50px;
+   
+}
+.trend2 .card .crd{
+    padding: 10px;
+    
+}
+.signup{
+    color: orange;
+}
+i{
+    font-size: 22px;
+}
+.heading1{
+    background-color: rgb(5, 5, 161);
+    color: white;
+    height: 10px;
+    margin: 25px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: -webkit-sticky;
+}
+.heading1 span{
+    color: rgb(255, 157, 0);
+}
+.heading span{
+    color: rgb(255, 157, 0);
+}
