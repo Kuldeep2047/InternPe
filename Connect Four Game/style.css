@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #6c70a2;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 20px 0;
+    border: 3px solid rgba(211, 248, 2, 0.993);
+    padding: 10px;
+    border-radius: 8px;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border: 2px solid rgb(43, 251, 1);
+    width: 630px;
+    background-color: rgb(74, 74, 198);
+    padding: 12px;
+    border-radius: 14px;
+    box-shadow: 
+    5px 5px 5px rgba(211, 248, 2, 0.993),  
+    -5px 5px 5px rgba(211, 248, 2, 0.993), 
+    5px -5px 5px rgba(211, 248, 2, 0.993), 
+    -5px -5px 5px rgba(211, 248, 2, 0.993);
+}
+
+ul{
+    display: grid;
+    place-items: center;
+    
+}
+
+ul p{
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 18px;
+    background-color: white;
+}
+
+ul:hover{
+    cursor: pointer;
+    background-color: rgb(98, 136, 238);
+}
+
+@media(max-width:700px){
+    .board{
+        width: 500px;
+    }
+    ul p{
+        width: 55px;
+        height: 55px;
+        
+    }
+    
+}
+@media(max-width:520px){
+    .board{
+        width: 400px;
+    }
+    ul p{
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+}
+@media(max-width:420px){
+    .board{
+        width: 320px;
+    }
+    ul p{
+        width: 30px;
+        height: 30px;
+        
+    }
+    
+}
